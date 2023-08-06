@@ -1,0 +1,117 @@
+/* Reset some default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Style for the main container */
+  .todo-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  /* Style for the heading */
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the input and button container */
+  .input-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  /* Style for the input field */
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style for the Add Task button */
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for the task list */
+  .task-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  /* Style for each task item */
+  .task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for completed tasks */
+  .task-item.completed {
+    background-color: #d1f1e6;
+    border-left: 5px solid #2ecc71;
+  }
+  
+  /* Style for the edit input in edit mode */
+  .task-item input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style for the Save and Cancel buttons */
+  .task-item button {
+    padding: 6px 10px;
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 5px;
+  }
+  
+  .task-item button:hover {
+    background-color: #e63939;
+  }
+  
+  /* Style for the pencil and delete icons */
+  .task-item i {
+    font-size: 18px;
+    color: #777;
+    cursor: pointer;
+    transition: color 0.3s;
+    display: inline-flex;
+    margin-left: 10px;
+  }
+  
+  /* Style for completed task icons */
+  .task-item.completed i {
+    color: #2ecc71;
+  }
+  
